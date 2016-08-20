@@ -1,0 +1,11 @@
+<div>
+    <form name="registerForm" ng-submit="submit()">
+        <div vc-recaptcha
+             key="siteKey.key"
+             on-create="recaptchaOnCreateHandler(widgetId)"
+             on-success="recaptchaOnSuccessHandler(response)"
+             on-expire="recaptchaTimeoutHandler()">
+        </div>
+        <button type="submit">Register!</button>
+    </form>
+</div>
